@@ -1,0 +1,30 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  background-color: black;
+}
+
+li {
+  list-style: none;
+  display: block;
+  position: absolute;
+  bottom: -120px;
+  animation: up 3s infinite alternate;
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-900px) rotate(900deg);
+  }
+}
